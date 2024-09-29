@@ -2,7 +2,8 @@
 
 <div align="center">
 
-![Logo de CodeCombat](/api/placeholder/200/100)
+<img align="center" src="https://cdn-icons-png.flaticon.com/512/759/759823.png" width="200">
+
 
 [![Estado del Proyecto](https://img.shields.io/badge/estado-activo-success.svg)]()
 [![GitHub Release](https://img.shields.io/github/release/obed-tc/CodeCombat.svg)](https://github.com/obed-tc/CodeCombat/releases/)
@@ -19,7 +20,9 @@
 
 Plataforma de desafíos semanales de programación para desarrolladores de todos los niveles.
 
-[Ver Demo](https://codecombat-demo.vercel.app) · [Reportar Bug](https://github.com/obed-tc/CodeCombat/issues) · [Solicitar Feature](https://github.com/obed-tc/CodeCombat/issues)
+[Ver Demo](https://codecombat2024.vercel.app) · [Reportar Bug](https://github.com/obed-tc/CodeCombat/issues) · [Solicitar Feature](https://github.com/obed-tc/CodeCombat/issues)
+
+<img src="https://github.com/user-attachments/assets/8dac0fc4-b82d-4e67-af84-c1069b41c1b3" width="600">
 
 </div>
 
@@ -59,8 +62,6 @@ CodeCombat es una plataforma innovadora que ofrece desafíos semanales de progra
 ### 🛠 Construido Con
 
 - [![Astro](https://img.shields.io/badge/Astro-0C1222?style=for-the-badge&logo=astro&logoColor=FDFDFE)](https://astro.build/)
-- [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-- [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 - [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 - [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
@@ -69,7 +70,7 @@ CodeCombat es una plataforma innovadora que ofrece desafíos semanales de progra
 ### 🎯 Cómo Participar en un Reto
 
 1. **Explora el Reto Actual**: 
-   - Visita nuestra [página principal](https://codecombat-demo.vercel.app).
+   - Visita nuestra [página principal](https://codecombat2024.vercel.app/).
    - Encuentra el reto de la semana en la sección destacada.
 
 2. **Inicia el Reto**:
@@ -163,7 +164,7 @@ CodeCombat es una plataforma innovadora que ofrece desafíos semanales de progra
 
 ## 💻 Uso
 
-Una vez que el servidor de desarrollo esté en marcha, puedes acceder a CodeCombat en `http://localhost:3000`. Desde allí, podrás explorar los retos actuales, ver soluciones pasadas y participar en la comunidad.
+Una vez que el servidor de desarrollo esté en marcha, puedes acceder a CodeCombat en `http://localhost:4321`. Desde allí, podrás explorar los retos actuales, ver soluciones pasadas y participar en la comunidad.
 
 ## 🗺 Hoja de Ruta
 
@@ -171,18 +172,10 @@ Consulta la [pestaña de Issues](https://github.com/obed-tc/CodeCombat/issues) p
 
 ## 📧 Contacto
 
-Obed TC - [@obed_tc](https://twitter.com/obed_tc) - obed@codecombat.com
+Obed TC - [@obed_tc](https://twitter.com/obed_tc) - castroobed53@gmail.com
 
 Link del Proyecto: [https://github.com/obed-tc/CodeCombat](https://github.com/obed-tc/CodeCombat)
 
-## 🙏 Agradecimientos
-
-- [Img Shields](https://shields.io)
-- [GitHub Pages](https://pages.github.com)
-- [Font Awesome](https://fontawesome.com)
-- [React Icons](https://react-icons.github.io/react-icons/search)
-
----
 
 ## 🙏 Agradecimientos
 
