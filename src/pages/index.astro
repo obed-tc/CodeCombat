@@ -11,7 +11,7 @@ import Timer from "../components/Timer.astro";
     <svg
       viewBox="0 0 100 100"
       preserveAspectRatio="none"
-      class="w-full h-[80vh] text-white"
+      class="w-full h-[80vh] text-white hidden md:flex"
       fill="currentColor"
     >
       <path
@@ -91,10 +91,12 @@ import Timer from "../components/Timer.astro";
         Z"
       ></path>
     </svg>
-    <main class="absolute top-[18vh] left-16 w-[91vw]">
+    <main class="md:absolute mt-24 md:mt-0 top-[18vh] left-16 md:w-[91vw]">
       <h2 class="text-3xl text-white font-bold mb-6">
-        <span class="text-lg font-semibold mr-[20vw]">Reto semanal:</span> ¡ENCUENTRA
-        EL <span class="text-cyan-400">ESPACIO PERDIDO</span>!
+        <span class="text-lg font-semibold md:mr-[20vw]">Reto semanal:</span>
+        <br class="md:hidden" />¡ENCUENTRA EL <span class="text-cyan-400"
+          >ESPACIO PERDIDO</span
+        >!
       </h2>
       <p class="text-white">
         John Mamani Bolqueta, un programador a full, se encuentra en un aprieto:
@@ -105,8 +107,8 @@ import Timer from "../components/Timer.astro";
         recuperar su valiosa memoria!
       </p>
 
-      <div class="flex mt-10">
-        <div class="p-2 w-[40vw]">
+      <div class="md:flex mt-10">
+        <div class="p-2 md:w-[40vw]">
           <h3 class="text-2xl font-semibold mb-4 text-white">Objetivo</h3>
           <p class="text-gray-300">
             Desarrollar un programa que escanee la computadora de John para
@@ -142,19 +144,25 @@ import Timer from "../components/Timer.astro";
         </div>
       </div>
     </main>
+    <br class="md:hidden" />
     <a
-      class="bg-cyan-400 text-black py-[1vh] w-[20vw] rounded-2xl absolute mt-[-30px] ml-[8vw] text-[3vh] font-bold text-center"
+      class="bg-cyan-400 text-black py-[1vh] px-10 md:w-[20vw] rounded-2xl md:absolute md:mt-[-30px] md:ml-[8vw] text-[3vh] font-bold text-center"
       href="https://github.com/obed-tc/CodeCombat/issues/new/choose"
       >Iniciar reto semanal</a
     >
+    <br class="md:hidden" />
+    <br class="md:hidden" />
+
     <div
-      class="bg-white bg-opacity-5 border border-white w-[40vw] mt-[-6vh] absolute right-32 rounded-b-[3vh] h-[15vh] flex items-center justify-around text-white text-[3vh] p-3 font-semibold"
+      class="bg-white bg-opacity-5 border border-white w-full md:w-[40vw] mt-5 md:mt-[-6vh] md:absolute right-32 rounded-[3vh] md:rounded-t-none md:rounded-b-[3vh] h-[15vh] md:flex items-center justify-around text-white md:text-[3vh] p-3 font-semibold"
     >
       Proximo reto en:
       <Timer />
     </div>
+    <br class="md:hidden" />
+    <br class="md:hidden" />
 
-    <div class="absolute bottom-10 text-gray-500 flex items-center">
+    <div class="md:absolute bottom-10 text-gray-500 flex items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
