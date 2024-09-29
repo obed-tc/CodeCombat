@@ -1,0 +1,58 @@
+<div class="flex flex-col mt-[-3vh]">
+  <label class="text-[8vh]" id="timer"> 00:00:00 </label>
+  <div class="flex justify-between ml-5 mt-[-15px]">
+    <label class="text-[2vh] text-cyan-200"> Dias </label>
+    <label class="text-[2vh] text-cyan-200"> Horas </label>
+    <label class="text-[2vh] text-cyan-200"> Minutos </label>
+    <label class="text-[2vh] text-cyan-200"> Segundos </label>
+  </div>
+</div>
+
+<script>
+  const timerDisplay = document.getElementById("timer");
+
+  const dateString = "06/10/2024 14:00:00";
+  const [datePart, timePart] = dateString.split(" ");
+  const [day, month, year] = datePart.split("/").map(Number);
+  const [hours, minutes, seconds] = timePart.split(":").map(Number);
+
+  const targetDate = new Date(year, month - 1, day, hours, minutes, seconds);
+
+  let interval = null;
+
+  function updateDisplay(remainingSeconds) {
+    const days = Math.floor(remainingSeconds / 86400)
+      .toString()
+      .padStart(2, "0");
+    const hours = Math.floor((remainingSeconds % 86400) / 3600)
+      .toString()
+      .padStart(2, "0");
+    const minutes = Math.floor((remainingSeconds % 3600) / 60)
+      .toString()
+      .padStart(2, "0");
+    const seconds = (remainingSeconds % 60).toString().padStart(2, "0");
+    timerDisplay.textContent = `${days}:${hours}:${minutes}:${seconds}`;
+  }
+
+  function startTimer() {
+    interval = setInterval(() => {
+      const now = new Date();
+      const remainingTime = Math.max(
+        0,
+        Math.floor((targetDate.getTime() - now.getTime()) / 1000)
+      ); // Calcular el tiempo restante
+      updateDisplay(remainingTime);
+
+      if (remainingTime <= 0) {
+        clearInterval(interval);
+        timerDisplay.textContent = "00:00:00:00";
+      }
+    }, 1000);
+  }
+
+  startTimer();
+
+  updateDisplay(
+    Math.floor((targetDate.getTime() - new Date().getTime()) / 1000)
+  );
+</script>
