@@ -1,0 +1,29 @@
+[
+    {
+        "titulo": "Encuentra el Espacio Perdido",
+        "descripcion": "John Mamani Bolqueta, un talentoso programador, enfrenta un desafío importante: la memoria de su computadora Kipus, proporcionada por el gobierno, está casi llena de node_modules...",
+        "objetivo": "Desarrollar un programa que escanee la computadora de John para listar todas las carpetas node_modules...",
+        "funcionalidades": [
+            "Búsqueda Rápida: Escanear y localizar todas las carpetas node_modules.",
+            "Clasificación: Organizar por antigüedad, por el espacio que ocupa en disco.",
+            "Eliminación Selectiva: Permitir a John eliminar carpetas individualmente o en grupos.",
+            "Notificación de espacio: Informar a John cuánto espacio ha liberado.",
+            "Multiplataforma: El programa debe funcionar en Linux, Windows, MacOS."
+        ],
+        "startDate": "2024-09-30",
+        "endDate": "2024-10-06"
+    },
+    {
+        "titulo": "Imágenes y Textos que Desaparecen",
+        "descripcion": "Carlos, un periodista de investigación, a menudo necesita compartir documentos y fotografías sensibles con sus colegas. Recientemente, un archivo importante que compartió fue capturado y distribuido sin su consentimiento, lo que comprometió la integridad de su trabajo y la seguridad de sus fuentes. Para evitar que esto vuelva a suceder, Carlos desea desarrollar una solución que genere URLs únicas para cada archivo que solo puedan ser vistas una vez. Así, después de la primera visualización, el contenido debe autodestruirse y no ser accesible nuevamente.",
+        "objetivo": "Desarrollar una API que permita a los usuarios subir imágenes y archivos de texto, generando URLs que solo se pueden visualizar una vez, eliminándose automáticamente tras esa visualización.",
+        "funcionalidades": [
+            "Subida de Contenido: Permitir a los usuarios subir imágenes y archivos de texto.",
+            "Generación de URLs Únicas: Crear una URL única para cada archivo subido.",
+            "Visualización de Contenido: Permitir la visualización a través de la URL única.",
+            "Autodestrucción: Eliminar el archivo tras la primera visualización."
+        ],
+        "startDate": "2024-10-07",
+        "endDate": "2024-10-13"
+    }
+]

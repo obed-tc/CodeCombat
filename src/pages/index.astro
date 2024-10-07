@@ -2,6 +2,21 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Timer from "../components/Timer.astro";
+import Retos from "../assets/retos.json";
+
+const retos = Retos;
+const obtenerRetoActual = () => {
+  const fechaActual = new Date();
+  const fechaActualISO = fechaActual.toISOString().split("T")[0];
+
+  const retoActual = retos.filter(
+    (reto) => fechaActualISO >= reto.startDate && fechaActualISO <= reto.endDate
+  );
+
+  return retoActual.length > 0 ? retoActual[0] : null;
+};
+
+const reto = obtenerRetoActual();
 ---
 
 <Layout title="CodeCombat | Retos de programación">
@@ -94,31 +109,19 @@ import Timer from "../components/Timer.astro";
     <main class="md:absolute mt-24 md:mt-0 top-[18vh] left-16 md:w-[91vw]">
       <h2 class="text-3xl text-white font-bold mb-6">
         <span class="text-lg font-semibold md:mr-[20vw]">Reto semanal:</span>
-        <br class="md:hidden" />¡ENCUENTRA EL <span class="text-cyan-400"
-          >ESPACIO PERDIDO</span
-        >!
+        <br class="md:hidden" />
+        {reto.titulo}
+        <!-- ¡ENCUENTRA EL <span class="text-cyan-400">{reto.titulo}</span>! -->
       </h2>
       <p class="text-white">
-        John Mamani Bolqueta, un talentoso programador, enfrenta un desafío
-        importante: la memoria de su computadora Kipus, proporcionada por el
-        gobierno, está casi llena de node_modules. Esta acumulación le dificulta
-        trabajar, ya que cada vez que instala un nuevo paquete con npm, el
-        espacio disponible disminuye drásticamente. Ahora, la computadora <strong
-          >NO LE COMPILA</strong
-        > nada. La falta de espacio no solo afecta su productividad, sino que también
-        pone en riesgo sus proyectos. Es fundamental encontrar una solución para
-        recuperar el espacio necesario en su computadora.
+        {reto.descripcion}
       </p>
 
       <div class="md:flex mt-2">
         <div class="p-2 md:w-[40vw]">
           <h3 class="text-2xl font-semibold mb-4 text-white">Objetivo</h3>
           <p class="text-gray-300">
-            Desarrollar un programa que escanee la computadora de John para
-            listar todas las carpetas <strong>node_modules</strong>. La
-            herramienta debe eliminar fácilmente las carpetas innecesarias,
-            filtrando por tamaño y fecha, y dando a John la opción de liberar
-            espacio de su computadora.
+            {reto.objetivo}
           </p>
         </div>
 
@@ -127,26 +130,11 @@ import Timer from "../components/Timer.astro";
             Funcionalidades
           </h3>
           <ul class="text-gray-300 list-disc list-inside space-y-2">
-            <li>
-              <strong>Búsqueda Rápida:</strong> Escanear y localizar todas las carpetas
-              <strong>node_modules</strong>.
-            </li>
-            <li>
-              <strong>Clasificación:</strong> Organizar por antiguedad, por el espacio
-              que ocupa en disco.
-            </li>
-            <li>
-              <strong>Eliminación Selectiva:</strong> Permitir a John eliminar carpetas
-              individualmente o en grupos.
-            </li>
-            <li>
-              <strong>Notificacion de espacio:</strong> Informar a John cuanto espacio
-              a liberado.
-            </li>
-            <li>
-              <strong>Multiplataforma:</strong> El programa debe funcionar en Linux,
-              Windows, MacOs
-            </li>
+            {
+              reto.funcionalidades.map((funcionalidad) => {
+                return <li>{funcionalidad}</li>;
+              })
+            }
           </ul>
         </div>
       </div>
