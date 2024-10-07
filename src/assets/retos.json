@@ -15,7 +15,7 @@
     },
     {
         "titulo": "Imágenes y Textos que Desaparecen",
-        "descripcion": "Carlos, un periodista de investigación, a menudo necesita compartir documentos y fotografías sensibles con sus colegas. Recientemente, un archivo importante que compartió fue capturado y distribuido sin su consentimiento, lo que comprometió la integridad de su trabajo y la seguridad de sus fuentes. Para evitar que esto vuelva a suceder, Carlos desea desarrollar una solución que genere URLs únicas para cada archivo que solo puedan ser vistas una vez. Así, después de la primera visualización, el contenido debe autodestruirse y no ser accesible nuevamente.",
+        "descripcion": "Josue choke kispe huanca trujillo gomez, un periodista de investigación, a menudo necesita compartir documentos y fotografías sensibles con sus colegas. Recientemente, un archivo importante que compartió fue capturado y distribuido sin su consentimiento, lo que comprometió la integridad de su trabajo y la seguridad de sus fuentes. Para evitar que esto vuelva a suceder, Carlos desea desarrollar una solución que genere URLs únicas para cada archivo que solo puedan ser vistas una vez. Así, después de la primera visualización, el contenido debe autodestruirse y no ser accesible nuevamente.",
         "objetivo": "Desarrollar una API que permita a los usuarios subir imágenes y archivos de texto, generando URLs que solo se pueden visualizar una vez, eliminándose automáticamente tras esa visualización.",
         "funcionalidades": [
             "Subida de Contenido: Permitir a los usuarios subir imágenes y archivos de texto.",
