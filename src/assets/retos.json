@@ -25,5 +25,125 @@
         ],
         "startDate": "2024-10-07",
         "endDate": "2024-10-13"
+    },
+    {
+        "titulo": "API de Consejos Aleatorios",
+        "descripcion": "Desarrolla una API que genere consejos prácticos y los devuelva al solicitar un GET, ideal para aplicaciones de bienestar y desarrollo personal.",
+        "objetivo": "Construir una API que ofrezca consejos aleatorios a los usuarios.",
+        "funcionalidades": [
+            "Consejo Diario: Entrega un consejo nuevo cada día.",
+            "Categorías de Consejos: Permite seleccionar consejos según temas (como salud, trabajo, relaciones).",
+            "Contador de Consejos Populares: Mide la popularidad de cada consejo."
+        ],
+        "startDate": "2024-10-27",
+        "endDate": "2024-11-03"
+    },
+    {
+        "titulo": "API de Chistes Aleatorios",
+        "descripcion": "Crea una API REST que devuelva chistes aleatorios al hacer una solicitud GET, ideal para integraciones en aplicaciones o sitios que buscan entretenimiento.",
+        "objetivo": "Desarrollar una API que entregue chistes aleatorios a los usuarios.",
+        "funcionalidades": [
+            "Generador de Chistes: Devuelve un chiste aleatorio al recibir una solicitud.",
+            "Categorías de Chistes: Ofrece chistes según diferentes categorías.",
+            "Contador de Popularidad: Mide la cantidad de veces que cada chiste ha sido solicitado."
+        ],
+        "startDate": "2024-11-03",
+        "endDate": "2024-11-10"
+    },
+    {
+        "titulo": "API de Palabras del Día",
+        "descripcion": "Desarrolla una API que genere una palabra desconocida cada día, proporcionando su significado y ejemplos de uso, ideal para expandir el vocabulario de los usuarios.",
+        "objetivo": "Crear una API que entregue una palabra nueva cada día con su definición y ejemplos.",
+        "funcionalidades": [
+            "Generación Diaria de Palabras: Selecciona palabras al azar cada día.",
+            "Definiciones y Ejemplos: Proporciona el significado y ejemplos de uso.",
+            "Notificaciones Diarias: Envía una palabra del día a los usuarios registrados."
+        ],
+        "startDate": "2024-11-10",
+        "endDate": "2024-11-17"
+    },
+    {
+        "titulo": "Corrector Ortográfico Automático",
+        "descripcion": "Desarrolla un sistema que verifique la ortografía de un texto, indicando errores y sugiriendo correcciones en tiempo real. Útil para aplicaciones educativas o sistemas de redacción.",
+        "objetivo": "Construir un corrector ortográfico que detecte errores en un texto y sugiera correcciones.",
+        "funcionalidades": [
+            "Verificación en Tiempo Real: Resalta errores mientras el usuario escribe.",
+            "Sugerencias de Corrección: Propone palabras alternativas para los errores detectados.",
+            "Compatibilidad Multilingüe: Permite verificar textos en varios idiomas."
+        ],
+        "startDate": "2024-11-17",
+        "endDate": "2024-11-24"
+    },
+    {
+        "titulo": "Encuestador con Reacción Visual",
+        "descripcion": "Crea un sistema donde el usuario ingrese una respuesta de 'Sí' o 'No' y reciba un gif de respuesta: feliz para 'Sí' y triste para 'No', ideal para aplicaciones de encuestas con retroalimentación visual.",
+        "objetivo": "Desarrollar un sistema de encuestas con respuestas visuales según las opciones.",
+        "funcionalidades": [
+            "Respuesta Visual: Muestra un gif según la respuesta ingresada.",
+            "Integración con API de Gifs: Usa servicios externos para mostrar gifs relevantes.",
+            "Personalización de Mensajes: Permite añadir mensajes personalizados según la respuesta."
+        ],
+        "startDate": "2024-11-24",
+        "endDate": "2024-12-01"
+    },
+    {
+        "titulo": "Organizador de Archivos por Extensión",
+        "descripcion": "Construye un programa CLI que clasifique todos los archivos de una carpeta en subcarpetas según su extensión, ideal para mantener organizados directorios de trabajo.",
+        "objetivo": "Crear una herramienta de línea de comandos para organizar archivos en carpetas según su tipo.",
+        "funcionalidades": [
+            "Clasificación Automática: Agrupa archivos en carpetas según su extensión.",
+            "Compatibilidad Multiplataforma: Funciona en Windows, Mac y Linux.",
+            "Reporte de Organización: Genera un informe de la organización realizada."
+        ],
+        "startDate": "2024-12-01",
+        "endDate": "2024-12-08"
+    },
+    {
+        "titulo": "API de la Biblia en Español",
+        "descripcion": "Desarrolla una API que permita consultar versículos de la Biblia en español, filtrando por libro, capítulo y versículo.",
+        "objetivo": "Crear una API que permita obtener versículos de la Biblia en español.",
+        "funcionalidades": [
+            "Consulta por Versículo: Permite obtener un versículo específico dado el libro, capítulo y número de versículo.",
+            "Búsqueda de Palabras Clave: Ofrece una búsqueda avanzada por palabras clave.",
+            "Versículo Aleatorio: Devuelve un versículo al azar para inspirar al usuario."
+        ],
+        "startDate": "2024-12-08",
+        "endDate": "2024-12-15"
+    },
+    {
+        "titulo": "Landing Page para Discotecas",
+        "descripcion": "Desarrolla una web de una sola página para discotecas, con información sobre eventos, galería de fotos, y formulario de contacto.",
+        "objetivo": "Diseñar una landing page moderna para promocionar eventos y servicios de una discoteca.",
+        "funcionalidades": [
+            "Galería de Imágenes: Mostrar fotos de eventos pasados.",
+            "Formulario de Reservas: Permitir a los usuarios reservar entradas o mesas.",
+            "Calendario de Eventos: Mostrar próximos eventos con fechas y detalles."
+        ],
+        "startDate": "2024-12-15",
+        "endDate": "2024-12-22"
+    },
+    {
+        "titulo": "Sorteador de Retweets con Verificación de Seguidores",
+        "descripcion": "Desarrolla un sistema que sorteé entre personas que hayan retuiteado un tweet, verificando además si siguen al creador del post. Útil para concursos en redes sociales.",
+        "objetivo": "Crear un sistema para realizar sorteos entre retuiteadores, filtrando solo a seguidores.",
+        "funcionalidades": [
+            "Verificación de Seguidores: Comprueba si los participantes siguen al autor.",
+            "Selección Aleatoria: Realiza un sorteo aleatorio entre los participantes elegibles.",
+            "Notificación al Ganador: Envía un mensaje al usuario ganador."
+        ],
+        "startDate": "2024-12-22",
+        "endDate": "2024-12-29"
+    },
+    {
+        "titulo": "Generador de Gráficos y Visualizaciones de Datos",
+        "descripcion": "Construye una API que reciba datos y devuelva gráficos o visualizaciones, útil para sitios web que necesitan mostrar datos de manera visual y atractiva.",
+        "objetivo": "Crear una API para generar gráficos y visualizaciones según datos de entrada.",
+        "funcionalidades": [
+            "Generación de Gráficos: Ofrece opciones como gráficos de barras, de línea y circulares.",
+            "Personalización de Gráficos: Permite modificar colores, etiquetas y leyendas.",
+            "Descarga de Imágenes: Los gráficos generados se pueden descargar en formato de imagen."
+        ],
+        "startDate": "2024-12-29",
+        "endDate": "2025-01-05"
     }
 ]
